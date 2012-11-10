@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*_ coding: utf-8 -*-
 
 #Author J. R. Carroll
 #Date:  July 18, 2012
