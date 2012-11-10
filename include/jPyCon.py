@@ -1,10 +1,10 @@
 #!/usr/bin/python
 
-# #Author J. R. Carroll
-# #Date:  July 18, 2012
-# #
-# #Instructions:  Run this file in-place and move the resulting desktop.ini file
-# #to the appropriate folder of which you want to alter the original folder type!
+#Author J. R. Carroll
+#Date:  July 18, 2012
+#
+#Instructions:  Run this file in-place and move the resulting desktop.ini file
+#to the appropriate folder of which you want to alter the original folder type!
 
 import os
 import sys
@@ -45,7 +45,7 @@ the Icon!", initialdir=myIconLocation)
            
     else:
         
-        # #Bring a windows explorer up to select ICON (should be .ico)
+        #Bring a windows explorer up to select ICON (should be .ico)
         myIconLocation = tkFileDialog.askdirectory(parent=root2, title='Location of \
 your Windows ICONs?')
 
@@ -66,11 +66,11 @@ def main():
     root.withdraw()
 
     myIcon2 = iconsLocation()
-    # #Bring a windows explorer up to select the DIR (change attrib to +r)
+    #Bring a windows explorer up to select the DIR (change attrib to +r)
     myDir = tkFileDialog.askdirectory(parent=root, title="Which folder do you \
 want to edit?")
     
-    # #String to be formated with the information above!
+    #String to be formated with the information above!
     writeOut = (
     """[.ShellClassInfo]
 ConfirmFileOp=0
@@ -78,7 +78,7 @@ NoSharing=1
 IconFile={0}
 IconIndex=0""")
 
-    # #Format the string with the correct variables
+    #Format the string with the correct variables
     rewriteOut = writeOut.format(myIcon2)
 
     try:
@@ -90,10 +90,10 @@ IconIndex=0""")
     except:
         pass
     
-    # #Name the .ini file for writing purposes!
+    #Name the .ini file for writing purposes!
     myDeskINIFile = open((str(myDir) + '/Desktop.ini'), 'w')
     
-    # #Write-out to the file
+    #Write-out to the file
     myDeskINIFile.writelines(rewriteOut)
     myDeskINIFile.close()
 
