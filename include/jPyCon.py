@@ -15,10 +15,10 @@ def iconsLocation():
     root2 = Tkinter.Tk()
     root2.withdraw()
     
-    # Config file name - this file has settings saved
+    #Config file name - this file has settings saved
     iconConfig = "jIcon.con"
 
-    # List that will later be used to check to see if config file is there!
+    #List that will later be used to check to see if config file is there!
     directory = os.listdir(os.getcwd())
     
     if iconConfig in directory:
@@ -91,7 +91,7 @@ IconIndex=0""")
     
     #Name the .ini file for writing purposes!
     myDeskINIFile = open((str(myDir) + '/Desktop.ini'), 'w')
-    
+
     #Write-out to the file
     myDeskINIFile.writelines(rewriteOut)
     myDeskINIFile.close()
