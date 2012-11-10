@@ -7,7 +7,6 @@
 #to the appropriate folder of which you want to alter the original folder type!
 
 import os
-import sys
 import Tkinter
 import tkFileDialog
 
