@@ -5,6 +5,6 @@ jPyCon is a Win7 (x32/x64) based folder-icon assignment tool.  Currently, to ass
 
 Note:  To get this to work, you may have to refresh (F5) or even reboot (in some rare cases).  
 
-Bugs?  Email me!  jrcarroll(zat)jrresearch.net, where zat = @.
+Bugs?  Email me!  jrcarroll(zat)jrcresearch.net, where zat = @.
 
 
